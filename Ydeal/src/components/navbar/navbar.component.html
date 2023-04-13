@@ -3,10 +3,14 @@
     <img [src]="logoUrl" alt="YDeal logo"/>
   </div>
     <div class="nav-button">
-      <button id="sign-up" mat-raised-button [routerLink]="'register'">
+      <button *ngIf="authServices.userLoggedIn == false" mat-button [routerLink]="'login'">
         CONNEXION
       </button>
-      <button mat-button [routerLink]="'profil'">Profil</button>
+      <button *ngIf="authServices.userLoggedIn == false" mat-button [routerLink]="'register'">
+        INSCRIPTION
+      </button>
+      <button *ngIf="authServices.userLoggedIn == true" mat-button [routerLink]="'profil'">PROFIL</button>
+      <button *ngIf="authServices.userLoggedIn == true" mat-button (click)="logout()">DECONNEXION</button>
     </div>
 </nav>
 

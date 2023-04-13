@@ -1,0 +1,33 @@
+<div class="main">
+  <form [formGroup]="loginForm" (ngSubmit)="loginUser()" autocomplete="on">
+    <label>CONNEXION</label>
+
+    <div class="inputText">
+      <!---Email ID---->
+      <div class="box">
+        <div class="fl iconBox"><mat-icon>email</mat-icon></div>
+        <div class="fr">
+          <input formControlName="email" matInput type="email" required name="email" placeholder="Email" class="textBox">
+        </div>
+      </div>
+
+      <!---Password------>
+      <div class="box">
+        <div class="fl iconBox"><mat-icon> vpn_key</mat-icon></div>
+        <div class="fr">
+          <input type="Password" formControlName="password" matInput required name="password" placeholder="Password" class="textBox">
+        </div>
+      </div>
+
+    </div>
+    <!--Terms and Conditions------>
+    <div class="box terms">
+      <input type="checkbox" name="Terms" required> &nbsp; I accept the terms and conditions
+    </div>
+    <!--Terms and Conditions------>
+    <!---Submit Button------>
+    <div class="submitBtn">
+      <input type="Submit" class="submit" value="SUBMIT">
+    </div>
+  </form>
+</div>
