@@ -1,1 +1,15 @@
-<p>navbar works!</p>
+<nav class="nav">
+  <div id="nav-logo" [routerLink]="''">
+    <img [src]="" alt="TrainWeb Logo"/>
+  </div>
+    <div class="nav-button">
+      <button mat-button [routerLink]="'login'">
+        Connexion
+      </button>
+      <button id="sign-up" mat-button [routerLink]="'register'">
+        Enregistrement
+      </button>
+    </div>
+</nav>
+
+
