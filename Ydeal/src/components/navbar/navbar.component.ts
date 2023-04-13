@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  public logoUrl : string = '/assets/logo-Ydeal.png';
   constructor() { }
 
   ngOnInit(): void {
