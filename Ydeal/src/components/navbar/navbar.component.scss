@@ -1,22 +1,24 @@
 .nav {
   position: sticky;
   top: 0;
-  width: 100%;
-  background-color: #92B6B1;
+  background-color: #666A86;
   color: #fff;
   display: flex;
   padding: 0 16px;
   align-items: center;
-  height: 56px;
+  height: 75px;
   font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
-  justify-content: space-around;
+  justify-content: space-between;
+
+  img{
+    margin : auto 0 auto 0;
+    height: 50%;
+    object-fit: contain
+  }
 
   button{
     display: flex;
     justify-content: right;
   }
-  .nav-button{
-    display: flex;
-    justify-content: space-between;
-  }
 }
+

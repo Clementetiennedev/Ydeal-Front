@@ -7,9 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginPageComponent implements OnInit {
 
+  password = "secret";
+  show = false;
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

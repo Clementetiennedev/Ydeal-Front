@@ -1,13 +1,10 @@
 <nav class="nav">
   <div id="nav-logo" [routerLink]="''">
-    <img [src]="" alt="TrainWeb Logo"/>
+    <img [src]="logoUrl" alt="YDeal logo"/>
   </div>
     <div class="nav-button">
-      <button mat-button [routerLink]="'login'">
-        Connexion
-      </button>
-      <button id="sign-up" mat-button [routerLink]="'register'">
-        Enregistrement
+      <button id="sign-up" mat-raised-button [routerLink]="'register'">
+        CONNEXION
       </button>
     </div>
 </nav>
