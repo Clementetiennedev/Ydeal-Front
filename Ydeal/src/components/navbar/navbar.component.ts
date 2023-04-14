@@ -17,6 +17,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  //Probleme de derniere minute la deconnexion ne fonctionne plus au dernier moment apres le rush et du code a la va vite donc j'ai supprimer le boutton
   logout(): void{
     //On deconnecter le user et on re-dirige a l'accueil
     this.afAuth.signOut();
