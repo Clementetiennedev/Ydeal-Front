@@ -1,0 +1,43 @@
+<div class="main">
+  <form [formGroup]="product" (ngSubmit)="createProduct()" autocomplete="on">
+    <label>Créer un article</label>
+
+    <div class="inputText">
+      <!---Email ID---->
+      <div class="box">
+        <div class="fl iconBox"><mat-icon>email</mat-icon></div>
+        <div class="fr">
+          <input formControlName="title" matInput type="" required name="title" placeholder="Nom de l'article" class="textBox">
+        </div>
+      </div>
+
+      <!---Password------>
+      <div class="box">
+        <div class="fl iconBox"><mat-icon> vpn_key</mat-icon></div>
+        <div class="fr">
+          <input type="price" formControlName="price" matInput required name="price" placeholder="Prix de l'article" class="textBox">
+        </div>
+      </div>
+
+      <!---Password------>
+      <div class="box">
+        <div class="fl iconBox"><mat-icon> vpn_key</mat-icon></div>
+        <div class="fr">
+          <input type="price" formControlName="price" matInput required name="price" placeholder="Prix de l'article" class="textBox">
+        </div>
+      </div>
+    </div>
+    <!---Description------>
+    <div class="box">
+      <div class="fl iconBox"><mat-icon> vpn_key</mat-icon></div>
+      <div class="fr">
+        <input type="description" formControlName="description" matInput required name="description" placeholder="Description de l'article" class="textBox">
+      </div>
+    </div>
+
+    <!---Submit Button------>
+    <div class="submitBtn">
+      <input type="Submit" class="submit" value="SUBMIT">
+    </div>
+  </form>
+</div>

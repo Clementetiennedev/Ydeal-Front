@@ -20,6 +20,7 @@ import{ AngularFireModule} from "@angular/fire/compat";
 import {MatCardModule} from "@angular/material/card";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
+import {CreateProductComponent} from "../components/create-product/create-product.component";
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import {HttpClientModule} from "@angular/common/http";
     LoginPageComponent,
     NavbarComponent,
     RegisterPageComponent,
+    CreateProductComponent
   ],
   imports: [
     BrowserModule,

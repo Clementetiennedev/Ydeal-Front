@@ -3,6 +3,7 @@
     <img [src]="logoUrl" alt="YDeal logo"/>
   </div>
     <div class="nav-button">
+      <button *ngIf="authServices.userLoggedIn == true" mat-button [routerLink]="'create-product'">DÉPOSER UNE ANNONCE</button>
       <button *ngIf="authServices.userLoggedIn == false" mat-button [routerLink]="'login'">
         CONNEXION
       </button>

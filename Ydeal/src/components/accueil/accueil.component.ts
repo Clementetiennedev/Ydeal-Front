@@ -13,8 +13,8 @@ export class AccueilComponent implements OnInit {
 
   ngOnInit(): void {
     // @ts-ignore
-    this.productService.fetchAllProducts().subscribe((response) => {
-      console.log(response)
+    this.productService.fetchAllProducts().subscribe((response: any) => {
+      console.log(response.data[0])
     })
   }
 }
