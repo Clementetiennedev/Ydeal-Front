@@ -46,3 +46,24 @@ Pas-à-pas voici les étapes pour installer notre projet et le lancer en environ
  - SEREIR Nacim - B2 B
  - GOURGOUILLON Pierre - B3 Dev A
  - ETIENNE Clement - B3 Dev B
+
+## Quelques screen du site
+
+* Page d'accueil :
+
+![Capture d'écran de l'application](Ydeal/src/assets/Accueil.PNG)
+
+* Page de connexion :
+
+![Capture d'écran de l'application](Ydeal/src/assets/Login.png)
+
+* Page d'inscription :
+
+![Capture d'écran de l'application](Ydeal/src/assets/Register.png)
+
+##PS
+
+-Nous avons rencontrez plusieurs problème de dernières minutes qui ont brider certaine feature comme la deconnexion, ou encore création d'annonce, pour vous deconnecter rafraichissez la page web et cela reset la session.
+-Veilez a bien avoir l'extension Allow CORS :
+
+![Capture d'écran de l'application](Ydeal/src/assets/Cors.png)
