@@ -20,6 +20,7 @@ import{ AngularFireModule} from "@angular/fire/compat";
 import {MatCardModule} from "@angular/material/card";
 import {MatInputModule} from "@angular/material/input";
 import {HttpClientModule} from "@angular/common/http";
+import {MatListModule} from "@angular/material/list";
 
 
 @NgModule({
@@ -43,7 +44,8 @@ import {HttpClientModule} from "@angular/common/http";
     AngularFireModule.initializeApp(environment.firebase),
     MatCardModule,
     MatInputModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

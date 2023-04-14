@@ -1,5 +1,5 @@
 .main{
-  width: 350px;
+  max-width: 522px;
   height: 500px;
   overflow: hidden;
   position: absolute;
@@ -9,6 +9,10 @@
   border-radius: 10px;
   box-shadow: 5px 20px 50px #000;
   transform: translate(-50%, -50%);
+}
+.all-input{
+  display: flex;
+  flex-direction: row;
 }
 label{
   color: #fff;
@@ -38,8 +42,7 @@ label{
 .inputText{
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  padding-top: 10px;
+  max-width: 260px;
 }
 .box{
   width: 360px;
