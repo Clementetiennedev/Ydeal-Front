@@ -32,13 +32,13 @@ Pas-à-pas voici les étapes pour installer notre projet et le lancer en environ
 * Pour commencer faite " npm install "
 * Puis " npm install -g @angular/cli "
 * Ensuite écrivez " ng add @angular/fire "
-* Enfin une fois tout cela installé, faites `ng serve` pour lancer le serveur et pouvoir acceder au site internet via l'url qui apparaîtra à la fin de la compilation
+* Enfin une fois tout cela installé, faites ng serve pour lancer le serveur et pouvoir acceder au site internet via l'url qui apparaîtra à la fin de la compilation
 
 ## Auteurs
 
-  - ETIENNE Clément
-  - GOURGOUILLON  Pierre
-  - POTIGNON Remi
-  - BENROLLE Sam
-  - BOERI Mayeul
-  - SEREIR Nacim
+ - BENROLLE Sam - B1 A
+ - BOERI Mayeul - B1 B
+ - POTIGNON Rémi - B2 A
+ - SEREIR Nacim - B2 B
+ - GOURGOUILLON Pierre - B3 Dev A
+ - ETIENNE Clement - B3 Dev B
