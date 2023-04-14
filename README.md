@@ -32,6 +32,10 @@ Pas-à-pas voici les étapes pour installer notre projet et le lancer en environ
 * Pour commencer, faites " npm install "
 * Puis " npm install -g @angular/cli "
 * Ensuite, écrivez " ng add @angular/fire "
+* Vous allez avoir un choix a faire de quel package de firebase vous prennez, selectionnez avec espace authentification (que lui) et faite entrée
+* Ensuite on va vous demmandez un code d'authorization vous saisissez 1234 et faite entrée, une erreur apparait et vous sort de l'install
+* Pas de panique c'est normal plus besoin de rien faire tout est bon
+* Ensuite on a rencontrer un problème de CORS sur notre projet dépourvu de solution nous avons donc choisi une extension chrome qui s'appel " Allow CORS "
 * Enfin une fois tout cela installé, faites `ng serve` pour lancer le serveur et pouvoir accéder au site internet via l'url qui apparaîtra à la fin de la compilation
 
 ## Auteurs
