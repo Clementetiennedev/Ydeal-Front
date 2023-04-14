@@ -16,7 +16,6 @@ export class ProductService {
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + this.authService.userToken
     })
-    console.log(headers)
     try {
       return this.httpClient.get('https://ydeal.herokuapp.com/api/products/', {headers: headers});
     } catch (e) {
