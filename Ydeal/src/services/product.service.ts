@@ -25,7 +25,7 @@ export class ProductService {
     }
   }
 
-  createProduct(product: Product) {
+  /*createProduct(product: Product) {
     const headers = new HttpHeaders({
       'Content-Type': 'application/json',
       'Authorization': 'Bearer ' + this.authService.userToken
@@ -33,5 +33,5 @@ export class ProductService {
     const dataStringify = JSON.stringify(product)
 
     this.httpClient.post('https://ydeal.herokuapp.com/api/products/', dataStringify, { headers: headers })
-  }
+  }*/
 }

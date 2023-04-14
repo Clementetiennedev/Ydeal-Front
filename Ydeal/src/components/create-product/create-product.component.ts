@@ -23,12 +23,12 @@ export class CreateProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  createProduct() {
+  /*createProduct() {
     try {
       this.productService.createProduct()
     } catch (e) {
       this.showError = true
       this.errorMessage = "Une erreur est survenue"
     }
-  }
+  }*/
 }
