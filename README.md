@@ -6,8 +6,8 @@
 </h1>
 
 <p align="center">
-  <a href="#key-features">YDeal</a> •
-  <a href="#how-to-use">Prérequis</a> •
+  <a href="#ydeal">YDeal</a> •
+  <a href="#prerequis">Prérequis</a> •
   <a href="#download">Installation</a> •
   <a href="#credits">Auteurs</a> 
 </p>
