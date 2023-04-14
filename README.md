@@ -14,11 +14,11 @@
 
 ## YDeal
 
-YDeal est un site de listing de produits physique qui a pour objectifs de permettre au étudiants d'Ynov de toute la france de vendre leurs biens.
+YDeal est un site de listing de produits physiques qui a pour objectif de permettre aux étudiants d'Ynov de toute la france de vendre et d'acheter des biens.
 
 ### Prérequis
 
-Vous devez disposez de node.js sur votre ordinateur ainsi que npm, pour cela referez vous a la doc de ces deux sujet : 
+Vous devez disposer de node.js sur votre ordinateur ainsi que de npm, pour cela référez-vous à la documentation de ces deux sujets : 
 * https://nodejs.org/en/download 
 
 ### Installation
@@ -27,12 +27,12 @@ Pas-à-pas voici les étapes pour installer notre projet et le lancer en environ
 
 * Cloner le projet sur votre poste de travail
 * Ouvrir l'IDE de votre choix et ouvrez le dossier Ydeal-Front
-* Une fois dans l'IDE ouvrez un terminal et faite `cd Ydeal` pour être au bon endroit
+* Une fois dans l'IDE ouvrez un terminal et faites `cd Ydeal` pour être au bon endroit
 * Vous allez devoir installer quelques packages 
-* Pour commencer faite " npm install "
+* Pour commencer, faites " npm install "
 * Puis " npm install -g @angular/cli "
-* Ensuite écrivez " ng add @angular/fire "
-* Enfin une fois tout cela installé, faites `ng serve` pour lancer le serveur et pouvoir acceder au site internet via l'url qui apparaîtra à la fin de la compilation
+* Ensuite, écrivez " ng add @angular/fire "
+* Enfin une fois tout cela installé, faites `ng serve` pour lancer le serveur et pouvoir accéder au site internet via l'url qui apparaîtra à la fin de la compilation
 
 ## Auteurs
 
