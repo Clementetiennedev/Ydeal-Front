@@ -1,25 +1,43 @@
 <div class="main">
-  <input type="checkbox" id="chk" aria-hidden="true">
+  <form [formGroup]="signupForm" (ngSubmit)="signUp()" autocomplete="on">
+    <label>INSCRIPTION</label>
 
-  <div class="signup">
-    <form [formGroup]="form" (ngSubmit)="onSubmit()">
-      <label for="chk" aria-hidden="true">Sign up</label>
-      <input type="text" placeholder="Pseudonyme">
-      <input type="email" placeholder="Email" required="">
-      <input type="password" placeholder="Mot de passe" required="">
-      <input type="password" placeholder="Confirmez mot de passe" required="">
-      <input type="date" placeholder="Date de naissance" required="">
-      <button>S'inscrire</button>
-    </form>
-  </div>
+    <div class="inputText">
+      <!---Pseudo---->
+      <div class="box">
+        <div class="fl iconBox"><mat-icon>person_pin</mat-icon></div>
+        <div class="fr">
+          <input formControlName="username" matInput type="text" required placeholder="Pseudonyme" class="textBox">
+        </div>
+      </div>
 
-  <div class="login">
-    <form>
-      <label for="chk" aria-hidden="true">Login</label>
-      <input type="email" placeholder="Email" required="">
-      <input type="password" placeholder="Mot de passe" required="">
-      <button>Se connecter</button>
-    </form>
-  </div>
+      <!---Email ID---->
+      <div class="box">
+        <div class="fl iconBox"><mat-icon>email</mat-icon></div>
+        <div class="fr">
+          <input formControlName="email" matInput type="email" required name="email" placeholder="Email" class="textBox">
+        </div>
+      </div>
+
+      <!---Password------>
+      <div class="box">
+        <div class="fl iconBox"><mat-icon> vpn_key</mat-icon></div>
+        <div class="fr">
+          <input type="Password" formControlName="password" matInput required name="password" placeholder="Password" class="textBox">
+        </div>
+      </div>
+
+    </div>
+    <!--Terms and Conditions------>
+    <div class="box terms">
+      <input type="checkbox" name="Terms" required> &nbsp; I accept the terms and conditions
+    </div>
+    <!--Terms and Conditions------>
+    <!---Submit Button------>
+    <div class="submitBtn">
+      <input type="Submit" class="submit" value="SUBMIT">
+    </div>
+    <!---Submit Button----->
+  </form>
 </div>
 

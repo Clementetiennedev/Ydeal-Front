@@ -16,8 +16,9 @@
     object-fit: contain
   }
 
-  button{
+  nav-button{
     display: flex;
+    flex-direction: row;
     justify-content: right;
   }
 }
