@@ -23,16 +23,16 @@ Vous devez disposez de node.js sur votre ordinateur ainsi que npm, pour cela ref
 
 ### Installation
 
-Pas a pas voici les étapes pour installer notre projet et le lancer en environnement de developpement :
+Pas-à-pas voici les étapes pour installer notre projet et le lancer en environnement de développement :
 
 * Cloner le projet sur votre poste de travail
-* Ouvrir l'IDE de votre choix et ouvrez le dossier YDeal-Front
-* Une fois dans l'IDE ouvrez un terminal et faite cd Ydeal pour etre au bon endroit
-* Vous allez devoir installez quelques packages 
+* Ouvrir l'IDE de votre choix et ouvrez le dossier Ydeal-Front
+* Une fois dans l'IDE ouvrez un terminal et faite `cd Ydeal` pour être au bon endroit
+* Vous allez devoir installer quelques packages 
 * Pour commencer faite " npm install "
 * Puis " npm install -g @angular/cli "
-* Ensuite ecrivez " ng add @angular/fire "
-* Enfin une fois tout cela installez, faites ng serve pour lancer le serveur et pouvoir acceder au site internet via l'url qui apparaitra a la fin de la compilation
+* Ensuite écrivez " ng add @angular/fire "
+* Enfin une fois tout cela installé, faites ng serve pour lancer le serveur et pouvoir acceder au site internet via l'url qui apparaîtra à la fin de la compilation
 
 ## Auteurs
 
