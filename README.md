@@ -7,9 +7,9 @@
 
 <p align="center">
   <a href="#ydeal">YDeal</a> •
-  <a href="#prerequis">Prérequis</a> •
-  <a href="#download">Installation</a> •
-  <a href="#credits">Auteurs</a> 
+  <a href="#prérequis">Prérequis</a> •
+  <a href="#installation">Installation</a> •
+  <a href="#auteurs">Auteurs</a> 
 </p>
 
 ## YDeal
