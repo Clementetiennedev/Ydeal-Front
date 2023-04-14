@@ -1,6 +1,6 @@
 <nav class="nav">
   <div id="nav-logo" [routerLink]="''">
-    <img [src]="logoUrl" alt="YDeal logo"/>
+    <img class="logo" [src]="logoUrl" alt="YDeal logo"/>
   </div>
     <div class="nav-button">
       <button *ngIf="authServices.userLoggedIn == false" mat-button [routerLink]="'login'">
@@ -10,7 +10,6 @@
         INSCRIPTION
       </button>
       <button *ngIf="authServices.userLoggedIn == true" mat-button [routerLink]="'profil'">PROFIL</button>
-      <button *ngIf="authServices.userLoggedIn == true" mat-button (click)="logout()">DECONNEXION</button>
     </div>
 </nav>
 

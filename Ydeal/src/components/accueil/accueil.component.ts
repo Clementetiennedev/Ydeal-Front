@@ -26,7 +26,6 @@ export class AccueilComponent implements OnInit {
   getUser(ownerId: string){
     // @ts-ignore
     this.productService.getUserByProduct(ownerId).subscribe((res) => {
-      console.log("loulou" + res)
     })
   }
 }
