@@ -21,7 +21,11 @@ export class RegisterPageComponent implements OnInit {
     this.signupForm = new FormGroup({
       'username': new FormControl('', Validators.required),
       'email': new FormControl('', [Validators.required, Validators.email]),
-      'password': new FormControl('', Validators.required)
+      'phone': new FormControl('', Validators.required),
+      'firstName': new FormControl('', Validators.required),
+      'lastName': new FormControl('', Validators.required),
+      'campus': new FormControl('', Validators.required),
+      'dateNais': new FormControl('', Validators.required)
     })
   }
   async signUp() {

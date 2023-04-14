@@ -9,12 +9,24 @@ import {ProductService} from "../../services/product.service";
 })
 export class AccueilComponent implements OnInit {
 
+  products!: any;
+  ownerId!: any;
   constructor(public afAuth: AngularFireAuth, public productService: ProductService) { }
 
   ngOnInit(): void {
     // @ts-ignore
-    this.productService.fetchAllProducts().subscribe((response) => {
-      console.log(response)
+    this.productService.fetchAllProducts().subscribe((response: any) => {
+      this.products = response.data
+      this.ownerId = this.products.ownerId
+      console.log(this.products)
+      console.log(this.ownerId + "owner")
+    })
+  }
+
+  getUser(ownerId: string){
+    // @ts-ignore
+    this.productService.getUserByProduct(ownerId).subscribe((res) => {
+      console.log("loulou" + res)
     })
   }
 }

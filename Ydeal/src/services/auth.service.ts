@@ -15,6 +15,7 @@ export class AuthService {
 
   async signUpUser(user: any) {
     await this.afAuth.createUserWithEmailAndPassword(user.email.toLowerCase(), user.password);
+    await this
   }
 
   async loginUser(email: string, password: string) {
@@ -22,5 +23,9 @@ export class AuthService {
     this.userLoggedIn = true;
     this.userToken = await user.user?.getIdToken();
     console.log("Auth services : Login success");
+  }
+
+  signUpBdd(email: string, password: string){
+
   }
 }

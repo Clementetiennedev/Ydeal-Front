@@ -23,4 +23,17 @@ export class ProductService {
       console.log("ERROR")
     }
   }
+
+  // @ts-ignore
+  getUserByProduct(ownerId: string) {
+    const headers = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + this.authService.userToken
+    })
+    try {
+      return this.httpClient.get('https://ydeal.herokuapp.com/api/users/'+ownerId, {headers: headers});
+    } catch (e) {
+      console.log("ERROR")
+    }
+  }
 }
