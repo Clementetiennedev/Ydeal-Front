@@ -24,17 +24,12 @@ export class RegisterPageComponent implements OnInit {
       'password': new FormControl('', Validators.required)
     })
   }
-  signUp()
-  {
-    console.log("oui")
-    if(this.signupForm.invalid)
-      return;
-    this.authServices.signUpUser(this.signupForm.value).then((result) =>{
-      if(result == null)
-        this.router.navigate(['profil']);
-      else if (result.isValid == false)
-        this.firebaseErrorMessage = result.message
-  })
+  async signUp() {
+    try {
+      await this.authServices.signUpUser(this.signupForm.value)
+      await this.router.navigate(['login']);
+    } catch (error) {
+      this.firebaseErrorMessage = "Une erreur est survenue";
+    }
   }
-
 }

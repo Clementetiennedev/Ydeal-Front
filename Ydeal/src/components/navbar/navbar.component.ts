@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   logout(): void{
     //On deconnecter le user et on re-dirige a l'accueil
     this.afAuth.signOut();

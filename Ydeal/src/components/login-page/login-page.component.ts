@@ -24,20 +24,18 @@ export class LoginPageComponent implements OnInit {
   }
   ngOnInit(): void {
   }
-  loginUser() {
-    if(this.loginForm.invalid)
-      return;
 
-      this.authServices.loginUser(this.loginForm.value.email, this.loginForm.value.password)
-        .then((result) => {
-          if(result == null){
-            console.log("Logging in ...");
-            this.router.navigate(['profil']);
-          }
-          else if (result.isValid == false) {
-            console.log('login error', result)
-            this.firebaseErrorMessage = result.message
-          }
-        })
+  async loginUser() {
+    try {
+      if (this.loginForm.invalid) {
+        throw new Error("");
+      }
+
+      await this.authServices.loginUser(this.loginForm.value.email, this.loginForm.value.password);
+      await this.router.navigate(['']);
+    } catch (error) {
+      console.log('login error')
+      this.firebaseErrorMessage = "Une erreur est survenue";
+    }
   }
 }

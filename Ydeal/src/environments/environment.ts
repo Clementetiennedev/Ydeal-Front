@@ -5,12 +5,12 @@
 export const environment = {
   production: false,
   firebase: {
-    apiKey: "AIzaSyAcg7DAOiwa6TalfQtG2KDWC7NDIBb76nM",
-    authDomain: "ydeal-24349.firebaseapp.com",
-    projectId: "ydeal-24349",
-    storageBucket: "ydeal-24349.appspot.com",
-    messagingSenderId: "1020673315528",
-    appId: "1:1020673315528:web:5c5cd394fc6d99f3040bfd"
+    apiKey: "AIzaSyB3Q1KUamQGqPie-TPr2jFUkxW1g6ZOmDA",
+    authDomain: "ydeal-auth.firebaseapp.com",
+    projectId: "ydeal-auth",
+    storageBucket: "ydeal-auth.appspot.com",
+    messagingSenderId: "543068818230",
+    appId: "1:543068818230:web:482d54e8626198644e4197"
   },
 };
 
