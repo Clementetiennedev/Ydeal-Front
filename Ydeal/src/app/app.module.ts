@@ -19,6 +19,7 @@ import { environment } from "../environments/environment";
 import{ AngularFireModule} from "@angular/fire/compat";
 import {MatCardModule} from "@angular/material/card";
 import {MatInputModule} from "@angular/material/input";
+import {HttpClientModule} from "@angular/common/http";
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import {MatInputModule} from "@angular/material/input";
     AngularFireModule.initializeApp(environment.firebase),
     MatCardModule,
     MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
